@@ -222,20 +222,20 @@ body {
     margin: auto;
 }
 
-.carousel-control-prev,
-.carousel-control-next {
+.carousel-prev,
+.carousel-next {
     color: #17252A;
     opacity: .5;
 }
 
-.carousel-control-prev:hover,
-.carousel-control-next:hover {
+.carousel-prev:hover,
+.carousel-next:hover {
     color: #17252A;
     opacity: 1;
 }
 
-.carousel-control-prev:focus,
-.carousel-control-next:focus {
+.carousel-prev:focus,
+.carousel-next:focus {
     color: #17252A;
     opacity: .5;
 }
