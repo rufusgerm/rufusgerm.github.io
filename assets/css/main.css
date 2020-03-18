@@ -75,6 +75,22 @@ body {
     color: #def2f1;
 }
 
+.modal-header {
+    background-color: rgba(85, 122, 149, 0.89);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    color: #def2f1;
+    font-family: sans-serif;
+    font-weight: lighter;
+    border-bottom: 0 none;
+}
+
+.modal-content {
+    background: linear-gradient(rgba(85, 122, 149, 0.89), rgba(115, 149, 174, 0.89));
+    color: rgb(23, 37, 42);
+    text-align: center;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
 /* PER SECTION CSS END */
 
 
@@ -90,20 +106,25 @@ body {
 
 /* -- INTRODUCTION START -- */
 .intro-row {
-    margin-top: 50px;
+    margin-top: 30px;
+}
+
+.description-row {
+    margin-bottom: 30px;
 }
 
 .intro-prefix {
-    font-size: 32px;
+    font-size: calc(0.8vw + 2vh + 1.2vmin);
     font-weight: lighter;
 }
 
 .intro-name {
-    font-size: 128px;
+    font-size: calc(8vw + 6vh + 3vmin);
     font-weight: lighter;
 }
 
 .intro-description {
+    font-size: calc(0.6vw + 0.8vh + 0.6vmin);
     font-weight: 600;
 }
 
@@ -192,7 +213,7 @@ body {
 
 .custom-icon {
     border-radius: 10%; 
-    opacity: 50%;
+    opacity: 0.5;
     height: 32px;
     width: 32px;
 }
@@ -201,8 +222,14 @@ body {
     float: left;
 }
 
-.custom-icon:hover, .custom-icon:focus {
-    opacity: 100%;
+.custom-icon:hover, 
+.custom-icon:focus, 
+.skill-icon:hover, 
+.skill-icon:focus,
+.tool-icon:focus,
+.tool-icon:hover {
+    opacity: 1;
+    color: rgb(0, 0, 0);;
 }
 /* -- SKILLS AND TOOLS END -- */
 
@@ -232,6 +259,10 @@ body {
     margin: auto;
 }
 
+.play-link {
+    color: #5d5c61;
+}
+
 .carousel-prev,
 .carousel-next, 
 .carousel-prev:focus,
@@ -245,6 +276,20 @@ body {
     color: #def2f1;
     opacity: 1;
 }
+
+@media (max-width:990px){
+    .carousel-prev,
+    .carousel-next, 
+    .carousel-prev:focus,
+    .carousel-next:focus,
+    .carousel-prev:hover,
+    .carousel-next:hover {
+        color: rgb(230, 123, 93);
+        opacity: 1;
+    }
+
+}
+
 /* -- PROJECTS END -- */
 
 /* -- CONTACT START -- */
@@ -293,11 +338,6 @@ footer {
     margin-left: 10px;
 }
 
-.modal-content {
-    background-color: #def2f1;
-    color: rgba(23, 37, 42, 0.507);
-}
-
 .modal-btn {
     margin-left: -7px;
 }
@@ -309,8 +349,13 @@ footer {
     color: rgba(23, 37, 42, 0.671);
 }
 
-.modal-btn-custom {
-    font-weight: 600;
-    background-color: rgba(233, 157, 136, 0.897);
+.close:focus {
+    border: 0 none;
+}
+
+.modal-footer {
+    background-color: rgba(115, 149, 174, 0.89);
+    box-shadow:inset 0 15px 5px -16px #111;
+    border-top: 0 none;
 }
 /* -- FOOTER END -- */

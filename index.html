@@ -27,22 +27,22 @@
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#about" title='About Section'>About<span class="sr-only">(current)</span></a>
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#about" title='About Section'>About<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="#skills" title='Skills And Tools Section'>Skills</a>
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#skills" title='Skills And Tools Section'>Skills</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#projects" title='Projects Section'>Projects</a>
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#projects" title='Projects Section'>Projects</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact" title='Contact Section'>Contact</a>
+            <a class="nav-link" data-toggle="collapse" data-target=".navbar-collapse.show" href="#contact" title='Contact Section'>Contact</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.linkedin.com/in/bergevinjd" title='LinkedIn'><i class="fab fa-linkedin-in"></i></a>
+            <a class='nav-link' target="_blank" href="https://www.linkedin.com/in/bergevinjd" title='LinkedIn'><i class="fab fa-linkedin-in"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://www.github.com/rufusgerm" title="GitHub"><i class="fab fa-github"></i></a>
+            <a class="nav-link" target='_blank' href="https://www.github.com/rufusgerm" title="GitHub"><i class="fab fa-github"></i></a>
           </li>
         </ul>
       </div>
@@ -59,7 +59,7 @@
         <div class="row intro-row justify-content-center">
           <h1 class='intro-name'>Jeremy Bergevin</h1>
         </div>
-        <div class="row justify-content-center">
+        <div class="row description-row justify-content-center">
           <p class='intro-description'>Software Developer in Portland, OR</p>
         </div>
         <div class='arrow-icon' style='margin-top: 100px;'>
@@ -100,7 +100,7 @@
             <!-- Left Column End -->
             <!-- Right Column Start -->
             <div class='col portrait-col d-flex justify-content-center'>
-              <img src="images/portrait_final.jpg" class='portrait rounded mx-5' alt="My Portrait">
+              <img src="images/portrait_final_small.jpg" class='portrait rounded mx-5' alt="My Portrait">
             </div>
             <!-- Right Column End -->
           </div>
@@ -242,38 +242,101 @@
             <h3 class='section-header'>Projects</h3>
             <hr width="75%">
           </div>
-          <div id="carousel" class="carousel slide" height='100px' data-ride="carousel">      
+          <div id="carousel" class="carousel slide" data-interval='false' height='100px' data-ride="carousel"> 
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>     
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img class="d-block img-fluid project-image" src="/images/app_images/inventory_app/inventory_screenshot.png" alt="Slide 1">
+                <a href="#projects" data-toggle="modal" data-target="#project-one-modal"><img class="d-block img-fluid project-image" src="/images/app_images/inventory_app/inventory_screenshot.png" alt="Slide 1"></a>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class='caption-heading'>Parts and Products</h5>
+                  <h5 class='caption-heading'>Parts and Products &ensp;<a href="#projects" data-toggle="modal" data-target="#project-one-modal"><i class="fas fa-play play-link"></i></a></h5>
                   <p class='caption-body'>An application for a company which needs an inventory of its
                     parts as well as the ability to create, modify, and delete parts and the
                     capability to create, modify, and delete products which can be assembled from said parts.
                   </p>
                 </div>
+                <div class="modal fade" id="project-one-modal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class='col-11'> 
+                          <h4 class="modal-title text-center" style='margin-left: 20px;'>Cosultants Portal</h4>
+                        </div>
+                        <div class='col-1' style="margin-top: 5px;"> 
+                          <button type="button" class="close" data-dismiss="modal">x</button>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/8p2Ug1-gKPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <div class="carousel-item">
-                <img class="d-block img-fluid project-image" src="/images/app_images/appointments_app/Screen Shot 2020-03-07 at 8.21.58 AM.png" alt="Slide 2">
+                <a href="#projects" data-toggle="modal" data-target="#project-two-modal"><img class="d-block img-fluid project-image" src="/images/app_images/appointments_app/Screen Shot 2020-03-07 at 8.21.58 AM.png" alt="Slide 2"></a>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="caption-heading">Consultants Portal</h5>
+                  <h5 class="caption-heading">Consultants Portal &ensp;<a href="#projects" data-toggle="modal" data-target="#project-two-modal"><i class="fas fa-play play-link"></i></a></h5>
                   <p class='caption-body'>A GUI portal for consultants at a company through which they can 
                     view their upcoming appointments, create, modify, and delete clients and 
                     appointments, and look at a generalized overview of their activity 
                     by month.
                   </p>
                 </div>
+                <div class="modal fade" id="project-two-modal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class='col-11'> 
+                          <h4 class="modal-title text-center" style='margin-left: 20px;'>Cosultants Portal</h4>
+                        </div>
+                        <div class='col-1' style="margin-top: 5px;"> 
+                          <button type="button" class="close" data-dismiss="modal">x</button>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wXKDcukQzGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
               <div class="carousel-item">
-                <img class="d-block img-fluid project-image" src="/images/app_images/appointments_app/Screen Shot 2020-03-07 at 8.21.58 AM.png" alt="Slide 3">
+                <a href="#projects" data-toggle="modal" data-target="#project-three-modal"><img class="d-block img-fluid project-image" src="/images/app_images/appointments_app/Screen Shot 2020-03-07 at 8.21.58 AM.png" alt="Slide 3"></a>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="caption-heading">Consultants Portal</h5>
+                  <h5 class="caption-heading">Consultants Portal &ensp;<a href="#projects" data-toggle="modal" data-target="#project-three-modal"><i class="fas fa-play play-link"></i></a></h5>
                   <p class='caption-body'>A GUI portal for consultants at a company through which they can 
                     view their upcoming appointments, create/edit/delete clients and 
                     appointments, and look at a generalized overview of their activity 
                     by month.
                   </p>
+                </div>
+                <div class="modal fade" id="project-three-modal">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <div class='col-11'> 
+                          <h4 class="modal-title text-center" style='margin-left: 20px;'>Cosultants Portal</h4>
+                        </div>
+                        <div class='col-1' style="margin-top: 5px;"> 
+                          <button type="button" class="close" data-dismiss="modal">x</button>
+                        </div>
+                      </div>
+                      <div class="modal-body">
+                        <div class="embed-responsive embed-responsive-16by9">
+                          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/wXKDcukQzGQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -347,10 +410,8 @@
   <div class="modal fade" id="attributionsModal">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="col-12 modal-title text-center">Attributions
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </h4>
+        <div class="modal-header font-weight-light">
+          <h4 class="col-12 modal-title text-center">Attributions</h4>
         </div>
         <div class="modal-body attribution-links">
           <p><a target="_blank" href="https://icons8.com/icons/set/pycharm">PyCharm icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
@@ -361,7 +422,7 @@
           <p>Contact implementation supported by <a target='_blank' href="https://formspree.io/">Formspree</a></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn modal-button-custom" data-dismiss="modal">Close</button>
+          <!-- <button type="button" class="btn modal-button-custom" data-dismiss="modal">Close</button> -->
         </div>
   
       </div>
