@@ -63,7 +63,7 @@
           <p class='intro-description'>Software Developer in Portland, OR</p>
         </div>
         <div class='arrow-icon' style='margin-top: 100px;'>
-          <a href="#about"><i class="fas fa-arrow-down custom-arrow-color"></i></a>
+          <a href="#about"><i class="fas fa-chevron-down custom-arrow-color"></i></a>
         </div>
       </div>
   </div>
@@ -72,11 +72,11 @@
     <div class='container section-container' id='about'>
       <div class='jumbotron align-items-center'>
         <div class='arrow-icon up-arrow' style='margin-bottom: 50px;'>
-          <a href="#"><i class="fas fa-arrow-up custom-arrow-color"></i></a>
+          <a href="#"><i class="fas fa-chevron-up custom-arrow-color"></i></a>
         </div>
         <!-- Card Start -->
         <div class='card section-card'>
-          <div class='row'>
+          <div class='row d-flex'>
             <!-- Left Column Start -->
             <div class='col'>
               <div class='row'>
@@ -86,16 +86,20 @@
               </div>
               <div class='row d-flex justify-content-center'>
                 <div class="card col-md about-bio">
-                  <p class='about-paragraph'>My name is Jeremy. I’m a software developer in Portland, Oregon. 
-                    I came to the software industry via the electrical trade. I have a 
-                    passion for utilizing interesting and innovative software technology 
-                    to solve real world problems. </p>
+                  <p class='about-paragraph paragraph-one'>&ensp; My name is Jeremy. 
+                    I’m a software developer in Portland, Oregon. I came to the 
+                    software industry via the electrical trade. I have a passion 
+                    for utilizing interesting and innovative 
+                    software technology to solve real world problems. </p>
+                  <p class='about-paragraph paragraph-two'>
+
+                  </p>
                 </div>
               </div>
             </div>
             <!-- Left Column End -->
             <!-- Right Column Start -->
-            <div class='col d-flex justify-content-center'>
+            <div class='col portrait-col d-flex justify-content-center'>
               <img src="images/portrait_final.jpg" class='portrait rounded mx-5' alt="My Portrait">
             </div>
             <!-- Right Column End -->
@@ -103,7 +107,7 @@
         </div>
         <!-- Card End -->
         <div class='arrow-icon' style='margin-top: 50px;'>
-          <a href="#skills"><i class="fas fa-arrow-down custom-arrow-color"></i></a>
+          <a href="#skills"><i class="fas fa-chevron-down custom-arrow-color"></i></a>
         </div>
       </div>
     </div>
@@ -112,9 +116,9 @@
     <div class='container section-container' id='skills'>
       <div class='jumbotron align-items-center'>
         <div class='arrow-icon'>
-          <a href="#about"><i class="fas fa-arrow-up custom-arrow-color"></i></a>
+          <a href="#about"><i class="fas fa-chevron-up custom-arrow-color"></i></a>
         </div>
-        <div class='row'>
+        <div class='row d-flex'>
           <div class='col'>
             <div class='skills'>
               <div class='card section-card'>
@@ -221,7 +225,7 @@
           </div>
         </div>
         <div class='arrow-icon'>
-          <a href="#projects"><i class="fas fa-arrow-down custom-arrow-color"></i></a>
+          <a href="#projects"><i class="fas fa-chevron-down custom-arrow-color"></i></a>
         </div>
       </div>
     </div>
@@ -230,10 +234,10 @@
   <div class='container section-container' id='projects'>
     <div class='jumbotron align-items-center'>
       <div class='arrow-icon'>
-        <a href="#skills"><i class="fas fa-arrow-up custom-arrow-color"></i></a>
+        <a href="#skills"><i class="fas fa-chevron-up custom-arrow-color"></i></a>
       </div>
-      <div class='row card'>
-        <div class='col projects section-card justify-content-center' id="projects">
+      <div class='row card section-card '>
+        <div class='col projects justify-content-center' id="projects">
           <div class='card-title'>
             <h3 class='section-header'>Projects</h3>
             <hr width="75%">
@@ -274,18 +278,18 @@
               </div>
             </div>
             <a class="carousel-control-prev" data-target="#carousel" role="button" data-slide="prev">
-              <i class="fas carousel-prev fa-arrow-alt-circle-left fa-2x"></i>
+              <i class="fas carousel-prev fa-chevron-left fa-2x"></i>
               <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" data-target="#carousel" role="button" data-slide="next">
-              <i class="fas carousel-next fa-arrow-alt-circle-right fa-2x"></i>
+              <i class="fas carousel-next fa-chevron-right fa-2x"></i>
               <span class="sr-only">Next</span>
             </a>
           </div>
         </div>
       </div>
       <div class='arrow-icon'>
-        <a href="#contact"><i class="fas fa-arrow-down custom-arrow-color"></i></a>
+        <a href="#contact"><i class="fas fa-chevron-down custom-arrow-color"></i></a>
       </div>
     </div>
   </div>
@@ -294,7 +298,7 @@
   <div class='container section-container' id='contact'>
     <div class='jumbotron align-items-center'>
       <div class='arrow-icon'>
-        <a href="#projects"><i class="fas fa-arrow-up custom-arrow-color"></i></a>
+        <a href="#projects"><i class="fas fa-chevron-up custom-arrow-color"></i></a>
       </div>
       <div class='row'>
         <div class='col contact card section-card'>
@@ -344,14 +348,20 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Attributions</h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="col-12 modal-title text-center">Attributions
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </h4>
         </div>
-        <div class="modal-body">
-          Modal body..
+        <div class="modal-body attribution-links">
+          <p><a target="_blank" href="https://icons8.com/icons/set/pycharm">PyCharm icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+          <p><a target="_blank" href="https://icons8.com/icons/set/intellij-idea">IntelliJ IDEA icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+          <p><a target="_blank" href="https://icons8.com/icons/set/netbeans">NetBeans icon</a> by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+          <p><a target='_blank' href="https://www.onlinewebfonts.com/icon/248288">Oracle SQL icon</a> by <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</p>
+          <p><a target='_blank' href="https://www.flaticon.com/free-icon/c-logo_74897?term=c&page=1&position=53">C++ icon</a> by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a></p>
+          <p>Contact implementation supported by <a target='_blank' href="https://formspree.io/">Formspree</a></p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn modal-button-custom" data-dismiss="modal">Close</button>
         </div>
   
       </div>
