@@ -121,6 +121,13 @@ body {
 .intro-name {
     font-size: calc(8vw + 6vh + 3vmin);
     font-weight: lighter;
+    white-space: nowrap;
+}
+
+@media (max-width:800px) {
+    .intro-name {
+        white-space: normal;
+    }
 }
 
 .intro-description {
@@ -170,6 +177,22 @@ body {
 
 .progress-bar-animated {
     background-color: rgb(230, 123, 93) !important;
+    overflow: visible;
+}
+
+.progress-bar-text {
+    font-size: 12px;
+    overflow: visible;
+    position: absolute;
+    margin-left: 30px;
+    opacity: 0;
+}
+
+@media (max-width:415px){
+    .progress-bar-text {
+        font-size: calc(0.6vw + 0.5vh + 0.4vmin);;
+        opacity: 1;
+    }
 }
 
 .skill-level-beginner {
@@ -261,6 +284,31 @@ body {
 
 .play-link {
     color: #5d5c61;
+    font-size: 24px;
+    animation: blink 2s ease-in infinite;
+}
+
+.mini-play-link {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+@media (max-width:768px) {
+    .mini-play-link {
+        color: rgb(230, 123, 93);
+        font-size: 42px;
+        opacity: 1;
+        animation: blink 2s ease-in infinite;
+        
+    }
+}
+
+@keyframes blink {
+    from, to { opacity: 1 }
+    50% { opacity: 0.3 }
 }
 
 .carousel-prev,
