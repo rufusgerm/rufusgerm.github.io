@@ -72,7 +72,7 @@ body {
 
 @media (max-width:415px){
     .arrow-icon {
-        font-size: 28px;
+        font-size: 22px;
     }
     .up-arrow {
         opacity: 0;
@@ -279,7 +279,7 @@ body {
 }
 
 .project-image {
-    width: 550px;
+    max-width: 550px;
     margin: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -290,7 +290,9 @@ body {
 .carousel-caption {
     background-color: rgba(230, 123, 93, 0.911);
     color: #5d5c61;
-    max-width: 400px; 
+    max-width: 400px;
+    max-height: 150px;
+    overflow-y: scroll; 
     margin: auto;
     opacity: 0;
 }
