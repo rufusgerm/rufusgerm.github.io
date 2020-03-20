@@ -70,6 +70,18 @@ body {
     text-align: center;
 }
 
+@media (max-width:415px){
+    .arrow-icon {
+        font-size: 28px;
+    }
+    .up-arrow {
+        opacity: 0;
+    }
+    .skills-down-arrow {
+        margin-top: -18px;
+    }
+}
+
 .custom-arrow-color, .custom-arrow-color:hover, .custom-arrow-color:focus {
     opacity: 1;
     color: #def2f1;
@@ -307,13 +319,18 @@ body {
     animation: blink 2s ease-in infinite;
 }
 
-.mini-play-link, .projects-menu-btns {
+.projects-menu-btns {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    /* animation: blink 2.5s ease-in infinite; */
+    animation: blink 2.5s ease-in infinite;
     opacity: 1;
+}
+
+@keyframes blink {
+    from, to { opacity: 1 }
+    50% { opacity: 0.6 }
 }
 
 .menu-btn {
@@ -321,12 +338,6 @@ body {
     font-size: 42px;
     margin: 0px 7.5px 0px 7.5px;
 }
-
-/* 
-@keyframes blink {
-    from, to { opacity: 1 }
-    50% { opacity: 0.6 }
-} */
 
 .carousel-prev,
 .carousel-next, 

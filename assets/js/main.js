@@ -21,6 +21,7 @@ $(document).ready(function() {
     $('.caption-close-btn').click(function() {
         $('.carousel-caption').fadeTo(500, 0);
     })
+
     
 
 });
