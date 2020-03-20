@@ -280,6 +280,25 @@ body {
     color: #5d5c61;
     max-width: 400px; 
     margin: auto;
+    opacity: 0;
+}
+
+.caption-close-btn,
+.caption-close-btn:hover, 
+.caption-close-btn:focus {
+    color: #5d5c61;
+    float: right; 
+    margin-right: 5px;
+}
+
+.caption-heading {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+}
+
+.caption-title {
+    margin-left: 20px;
 }
 
 .play-link {
@@ -288,28 +307,26 @@ body {
     animation: blink 2s ease-in infinite;
 }
 
-.mini-play-link {
+.mini-play-link, .projects-menu-btns {
     top: 50%;
     left: 50%;
     position: absolute;
     transform: translate(-50%, -50%);
-    opacity: 0;
+    /* animation: blink 2.5s ease-in infinite; */
+    opacity: 1;
 }
 
-@media (max-width:768px) {
-    .mini-play-link {
-        color: rgb(230, 123, 93);
-        font-size: 42px;
-        opacity: 1;
-        animation: blink 2s ease-in infinite;
-        
-    }
+.menu-btn {
+    color: rgb(230, 123, 93);
+    font-size: 42px;
+    margin: 0px 7.5px 0px 7.5px;
 }
 
+/* 
 @keyframes blink {
     from, to { opacity: 1 }
-    50% { opacity: 0.3 }
-}
+    50% { opacity: 0.6 }
+} */
 
 .carousel-prev,
 .carousel-next, 

@@ -7,14 +7,6 @@
     <link rel='icon' href='/images/favicon_io/favicon.ico' type='image/x-icon'/>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <!-- Font Awesome CDN -->
-    <script src="https://kit.fontawesome.com/67d8a829d6.js" crossorigin="anonymous"></script>
     <!-- main.css -->
     <link rel="stylesheet" href="assets/css/main.css">
   </head>
@@ -260,12 +252,17 @@
             </ol>     
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <a href="#projects" data-toggle="modal" data-target="#project-one-modal">
-                  <i class="fas fa-play mini-play-link"></i>
-                  <img class="d-block img-fluid project-image" src="/images/app_images/inventory_app/inventory_screenshot.png" alt="Slide 1">
-                </a>
+                <img class="d-block img-fluid project-image" src="/images/app_images/inventory_app/inventory_screenshot.png" alt="Slide 1">
+                <span class="projects-menu-btns">
+                  <a href="#projects" data-toggle="modal" data-target="#project-one-modal">
+                    <i class="far fa-play-circle menu-btn play-btn"></i>
+                  </a>
+                </span>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class='caption-heading'>Parts and Products &ensp;<a href="#projects" data-toggle="modal" data-target="#project-one-modal"><i class="fas fa-play play-link"></i></a></h5>
+                  <div class='caption-heading'>
+                    <h5 class='caption-title' style='display:inline-block'>Parts and Products</h5>
+                    <span class=''><a class='caption-close-btn' href="#projects"><i class="far fa-times-circle"></i></a></span>
+                  </div>
                   <p class='caption-body'>An application for a company which needs an inventory of its
                     parts as well as the ability to create, modify, and delete parts and the
                     capability to create, modify, and delete products which can be assembled from said parts.
@@ -293,12 +290,17 @@
               </div>
 
               <div class="carousel-item">
-                <a href="#projects" data-toggle="modal" data-target="#project-two-modal">
-                  <i class="fas fa-play mini-play-link"></i>
-                  <img class="d-block img-fluid project-image" src="/images/app_images/appointments_app/Screen Shot 2020-03-07 at 8.21.58 AM.png" alt="Slide 2">
-                </a>
+                <img class="d-block img-fluid project-image" src="/images/app_images/appointments_app/Screen Shot 2020-03-07 at 8.21.58 AM.png" alt="Slide 2">
+                <span class="projects-menu-btns">
+                  <a href="#projects" data-toggle="modal" data-target="#project-two-modal">
+                    <i class="far fa-play-circle menu-btn play-btn"></i>
+                  </a>
+                </span>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="caption-heading">Consultants Portal &ensp;<a href="#projects" data-toggle="modal" data-target="#project-two-modal"><i class="fas fa-play play-link"></i></a></h5>
+                  <div class='caption-heading'>
+                    <h5 class='caption-title' style='display:inline-block'>Consultants Portal</h5>
+                    <span class=''><a class='caption-close-btn' href="#projects"><i class="far fa-times-circle"></i></a></span>
+                  </div>
                   <p class='caption-body'>A GUI portal for consultants at a company through which they can 
                     view their upcoming appointments, create, modify, and delete clients and 
                     appointments, and look at a generalized overview of their activity 
@@ -326,12 +328,17 @@
                 </div>
               </div>
               <div class="carousel-item">
-                <a href="#projects" data-toggle="modal" data-target="#project-three-modal">
-                  <i class="fas fa-play mini-play-link"></i>
                   <img class="d-block img-fluid project-image" src="/images/app_images/appointments_app/Screen Shot 2020-03-07 at 8.21.58 AM.png" alt="Slide 3">
-                </a>
+                  <span class="projects-menu-btns">
+                    <a href="#projects" data-toggle="modal" data-target="#project-three-modal">
+                      <i class="far fa-play-circle menu-btn play-btn"></i>
+                    </a>
+                  </span>
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 class="caption-heading">Consultants Portal &ensp;<a href="#projects" data-toggle="modal" data-target="#project-three-modal"><i class="fas fa-play play-link"></i></a></h5>
+                  <div class='caption-heading'>
+                    <h5 class='caption-title' style='display:inline-block'>Consultants Portal</h5>
+                    <span class=''><a class='caption-close-btn' href="#projects"><i class="far fa-times-circle"></i></a></span>
+                  </div>
                   <p class='caption-body'>A GUI portal for consultants at a company through which they can 
                     view their upcoming appointments, create/edit/delete clients and 
                     appointments, and look at a generalized overview of their activity 
@@ -414,7 +421,17 @@
       </div>
     </div>
   </div>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <!-- Popper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <!-- Font Awesome CDN -->
+  <script src="https://kit.fontawesome.com/67d8a829d6.js" crossorigin="anonymous"></script>
+  <!-- ZenScroll -->
   <script src="/assets/js/zenscroll-dist/zenscroll-min.js"></script>
+  <!-- My Script -->
   <script src="/assets/js/main.js"></script>
 </body>
 
