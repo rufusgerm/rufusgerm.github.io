@@ -4,7 +4,7 @@ html {
 
 body {
     padding-top: 65px;
-    background: linear-gradient(#557A95, #7395AE);
+    background: linear-gradient(#679c99, #54807d);
     height: 100%;
     margin: 0;
     background-repeat: no-repeat;
@@ -13,7 +13,7 @@ body {
 
 /* -- NAVBAR START -- */
 .navbar {
-    background-color: #557A95;
+    background-color: #679c99;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -88,7 +88,7 @@ body {
 }
 
 .modal-header {
-    background-color: rgba(85, 122, 149, 0.89);
+    background-color: #679c99c5;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
     color: #def2f1;
     font-family: sans-serif;
@@ -97,7 +97,7 @@ body {
 }
 
 .modal-content {
-    background: linear-gradient(rgba(85, 122, 149, 0.89), rgba(115, 149, 174, 0.89));
+    background: linear-gradient(#679c99c5, #54807dc5);
     color: rgb(23, 37, 42);
     text-align: center;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
@@ -390,7 +390,7 @@ body {
 }
 
 .custom-btn:hover {
-    background-color: rgb(153, 106, 93);
+    background-color: rgb(177, 124, 109);
 }
 
 /* -- CONTACT END -- */
@@ -398,7 +398,7 @@ body {
 
 /* -- FOOTER START -- */
 footer {
-    background-color: #7395AE;
+    background-color: #679c99;
     box-shadow:inset 0 15px 5px -16px #111;
 }
 
