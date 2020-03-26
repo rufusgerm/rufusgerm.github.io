@@ -42,8 +42,8 @@ body {
 
 /* PER SECTION CSS START */
 .jumbotron {
-    background-color: rgba(255, 255, 255, 0); 
-    color: #def2f1; 
+    background-color: rgba(255, 255, 255, 0);
+    color: #def2f1;
     margin: 50px 0px 50px 0px;
     min-height: 80vh;
 }
@@ -168,7 +168,7 @@ body {
 }
 
 .portrait {
-    max-width: 300px;
+    max-width: 400px;
     margin: auto;
     margin-top: 12px;
     margin-bottom: 12px;
@@ -208,15 +208,15 @@ body {
 }
 
 .skill-level-beginner {
-    width:33%; 
+    width:33%;
 }
 
 .skill-level-intermediate {
-    width:60%; 
+    width:60%;
 }
 
 .skill-level-proficient {
-    width:80%; 
+    width:80%;
 }
 
 .skills-row, .tools-row {
@@ -238,7 +238,7 @@ body {
 }
 
 .skill-icon, .custom-skill {
-    margin-left: 15px; 
+    margin-left: 15px;
     margin-right: 5px;
 }
 
@@ -247,7 +247,7 @@ body {
 }
 
 .custom-icon {
-    border-radius: 10%; 
+    border-radius: 10%;
     opacity: 0.35;
     height: 32px;
     width: 32px;
@@ -257,9 +257,9 @@ body {
     float: left;
 }
 
-.custom-icon:hover, 
-.custom-icon:focus, 
-.skill-icon:hover, 
+.custom-icon:hover,
+.custom-icon:focus,
+.skill-icon:hover,
 .skill-icon:focus,
 .tool-icon:focus,
 .tool-icon:hover {
@@ -292,16 +292,16 @@ body {
     color: #5d5c61;
     max-width: 400px;
     max-height: 150px;
-    overflow-y: scroll; 
+    overflow-y: scroll;
     margin: auto;
     opacity: 0;
 }
 
 .caption-close-btn,
-.caption-close-btn:hover, 
+.caption-close-btn:hover,
 .caption-close-btn:focus {
     color: #5d5c61;
-    float: right; 
+    float: right;
     margin-right: 5px;
 }
 
@@ -342,7 +342,7 @@ body {
 }
 
 .carousel-prev,
-.carousel-next, 
+.carousel-next,
 .carousel-prev:focus,
 .carousel-next:focus {
     color: #def2f1;
@@ -357,7 +357,7 @@ body {
 
 @media (max-width:990px){
     .carousel-prev,
-    .carousel-next, 
+    .carousel-next,
     .carousel-prev:focus,
     .carousel-next:focus,
     .carousel-prev:hover,
