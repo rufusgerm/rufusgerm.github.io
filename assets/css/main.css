@@ -62,8 +62,19 @@ body {
 .section-header {
     font-size: 48px;
 }
+
 .subsection-title {
     font-size: 36px;
+}
+
+@media (max-width:415px){ 
+    .section-header {
+        font-size: 36px;
+    }
+    
+    .subsection-title {
+        font-size: 24px;
+    }
 }
 
 .arrow-icon {
@@ -76,9 +87,6 @@ body {
     }
     .up-arrow {
         opacity: 0;
-    }
-    .skills-down-arrow {
-        margin-top: -18px;
     }
 }
 
@@ -126,14 +134,19 @@ body {
 }
 
 .intro-prefix {
-    font-size: calc(0.8vw + 2vh + 1.2vmin);
+    font-size: 2.0rem;
     font-weight: lighter;
 }
 
 .intro-name {
-    font-size: calc(8vw + 6vh + 3vmin);
+    font-size: 9rem;
     font-weight: lighter;
     white-space: nowrap;
+}
+
+.intro-description {
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 @media (max-width:800px) {
@@ -142,9 +155,18 @@ body {
     }
 }
 
-.intro-description {
-    font-size: calc(0.6vw + 0.8vh + 0.6vmin);
-    font-weight: 600;
+@media (max-width:415px) {
+    .intro-prefix {
+        font-size: 1.5rem;
+    }
+
+    .intro-name {
+        font-size: 6rem;
+    }
+
+    .intro-description {
+        font-size: 1.0rem;
+    }
 }
 
 /* -- INTRODUCTION END -- */
@@ -174,6 +196,13 @@ body {
     margin-bottom: 12px;
     /* box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2); */
 }
+
+@media (max-width:415px){
+    .portrait {
+        max-width: 300px;
+    }
+}
+
 /* -- ABOUT END -- */
 
 /* -- SKILLS AND TOOLS END -- */
@@ -404,7 +433,7 @@ footer {
 
 .footer-content {
     color: rgba(23, 37, 42, 0.89);
-    background-color: rgba(23, 37, 42, 0);
+    background-color: #679c99;
     border: none;
     font-size: 15px;
     font-weight: lighter;
